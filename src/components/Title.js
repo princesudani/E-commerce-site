@@ -21,7 +21,9 @@ class Title extends Component {
             {name}{' '}
             <strong
               className={
-                theme ? 'text-primary' : 'text-blue'
+                theme
+                ? 'text-capitalize font-weight-bold text-light'
+                : 'text-capitalize font-weight-bold text-dark'
               }
             >
               {title}

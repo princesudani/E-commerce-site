@@ -1,96 +1,149 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
- --mainBlue:#2a2a72;
- --lightBlue:#009ffd;
- --mainWhite:#f3f3f3;
- --mainDark:#232528;
- --mainYellow:#ffa400;
+  --mainBlue: #2a2a72;
+  --lightBlue: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #232528;
+  --mainYellow: #ffa400;
 }
-.bg-slate-900{
-  background-color: #1F2937;
+.bg-slate-900 {
+  background-color: #1f2937;
 }
-.bg-slate-800{
-  background-color: #2D3748;
+.bg-slate-800 {
+  background-color: #2d3748;
 }
-.themes{
-  font-size:x-large;
+
+/* Custom Theme */
+
+.bg-color-111 {
+  background-color: #0066ff;
 }
-.cardbg{
-  background-color: #2D3748;
+.bg-color-222 {
+  background-color: #ff0000;
 }
-.paddinglr{
+.bg-slate-333 {
+  background-color: #ffd900;
+}
+.bg-slate-444 {
+  background-color: #09ff00;
+}
+
+.themes {
+  font-size: x-large;
+}
+.cardbg {
+  background-color: #2d3748;
+}
+.paddinglr {
   width: 100%;
 }
-.h-full{
+.h-full {
   height: 100vh;
 }
-.h-fit{
+.h-fit {
   height: fit-content;
 }
-.hover:hover{
+.hover:hover {
   color: #009ffd;
 }
-.menubar{
-  border:#979393 1px solid;
-  padding-left: 3px; 
+.menubar {
+  border: #979393 1px solid;
+  padding-left: 3px;
   padding-right: 3px;
   border-radius: 6px;
   font-size: x-large;
 }
-.bg-slate-200{
+.bg-slate-200 {
   background-color: #b1bac4;
 }
-.resmenu{
+.resmenu {
   display: flex;
   flex-direction: column;
   gap: 5px;
   justify-content: flex-start;
 }
-.w-100{
+.w-100 {
   width: 100%;
 }
-.w-50{
+.w-50 {
   width: 50%;
 }
-.menu{
+.menu {
   display: flex;
   justify-content: flex-end;
 }
-.mainmenu{
+.mainmenu {
   margin-left: 20px;
 }
-body{
-  font-family:"Anton", sans-serif !important;
-  color:var(--mainDark) !important;
+body {
+  font-family: "Poppins", sans-serif !important;
+  color: var(--mainDark) !important;
 }
-.text-title{
-  font-family: 'Anton', cursive;
-  letter-spacing:0.3rem;
-  text-transform: uppercase; 
+.text-title {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
 }
-.text-blue{
-  color:var(--mainBlue);
+.text-blue {
+  color: var(--mainBlue);
 }
-.text-bright{
-  color:var(--lightBlue);
+.text-bright {
+  color: var(--lightBlue);
 }
-.btn-black{
-  background:transparent;
-  text-transform:capitalize;
-  font-size:0.8rem;
-  color:var(--mainDark);
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  color: var(--mainDark);
   border-radius: 0;
-  border:0.1rem solid var(--mainDark);
+  border: 0.1rem solid var(--mainDark);
 }
-.btn-black:hover{
-  background:var(--mainDark) !important;
-  color:var(--mainWhite) !important;
+.btn-black:hover {
+  background: var(--mainDark) !important;
+  color: var(--mainWhite) !important;
 }
-.cart-icon{
-  cursor:pointer;
-  font-size:1.2rem;
-  color:var(--mainYellow);
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainYellow);
+}
+input {
+  outline: none;
+}
+.input-field {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+/* Custom dark theme background colors */
+.bg-primary-dark {
+  background-color: #1e3a8a; /* Example dark primary color */
+}
+
+.bg-danger-dark {
+  background-color: #7f1d1d; /* Example dark danger color */
+}
+
+.bg-warning-dark {
+  background-color: #854d0e; /* Example dark warning color */
+}
+
+.bg-success-dark {
+  background-color: #065f46; /* Example dark success color */
+}
+
+/* Custom text colors (if needed) */
+.text-light {
+  color: #ffffff;
+}
+
+.text-dark {
+  color: #000000;
 }
